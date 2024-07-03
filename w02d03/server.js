@@ -36,7 +36,6 @@ server.on('connection', (connection) => {
   });
 });
 
-
 server.listen(port, () => {
   console.log(`server is running on port ${port}`);
 }); // starts the server on the specified port
