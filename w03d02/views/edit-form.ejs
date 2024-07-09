@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Microorganism</title>
+</head>
+<body>
+  <h1>Edit your Microorganism below!!!</h1>
+
+  <form method="POST" action="/microorganisms/<%= microorganism.id %>/edit">
+    <label>ID</label>
+    <input name="id" value="<%= microorganism.id %>" disabled />
+    <br/>
+    <label>Name</label>
+    <input name="name" value="<%= microorganism.name %>" />
+    <br/>
+    <label>Species</label>
+    <input name="species" value="<%= microorganism.species %>"/>
+    <br/>
+    <label>Size in Nm</label>
+    <input name="sizeInNm" value="<%= microorganism.sizeInNm %>"/>
+    <br/>
+    <label>Number of Cells</label>
+    <input name="numCells" value="<%= microorganism.numCells %>"/>
+    <br/>
+    <label>Survivor Temp</label>
+    <input name="survivorTemp" value="<%= microorganism.survivorTemp %>"/>
+    <br/>
+    <button type="submit">Create!</button>
+  </form>
+</body>
+</html>

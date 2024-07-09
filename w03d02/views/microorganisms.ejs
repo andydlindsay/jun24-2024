@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Microorganisms</title>
+</head>
+<body>
+  <h1>All the Microorganisms</h1>
+
+  <a href="/microorganisms/new">Add new microorganism</a>
+
+  <% for (const id in microorganisms) { %>
+    <div style="border: 2px solid green;">
+      <h2>Name: <%= microorganisms[id].name %></h2>
+      <h3>Species: <%= microorganisms[id].species %></h3>
+      <h3>Size In Nm: <%= microorganisms[id].sizeInNm %></h3>
+      <h3>Number of Cells: <%= microorganisms[id].numCells %></h3>
+      <h3>Survivor Temp: <%= microorganisms[id].survivorTemp %></h3>
+
+      <form method="POST" action="/microorganisms/<%= id %>/delete">
+        <button type="submit">Delete!</button>
+      </form>
+      <a href="/microorganisms/<%= id %>/edit">Edit</a>
+    </div>
+  <% } %>
+</body>
+</html>
