@@ -1,0 +1,56 @@
+@import '_variables.scss';
+
+p {
+  font-size: 12px;
+  text-decoration: underline;
+  color: $hello;
+  border: $border;
+}
+
+// <div>
+//   <header>
+//     <h3>Hello</h3>
+//     <p>More info</p>
+//   </header>
+//   <h2>Welcome</h2>
+// </div>
+
+div {
+  font-size: 12px;
+  text-decoration: underline;
+
+  header {
+    font-size: 24px;
+    color: $primary;
+
+    h3 {
+      color: $secondary;
+    }
+  }
+}
+
+.heading {
+  text-decoration: overline;
+  color: $hello;
+}
+
+.another {
+  @extend .heading;
+  margin: 0 auto;
+}
+
+@mixin make-square($dimension, $color) {
+  color: $color;
+  font-size: 50px;
+  width: $dimension * 2;
+  height: $dimension;
+}
+
+.square {
+  @include make-square(25rem, white);
+  padding: 20px;
+}
+
+.large-square {
+  @include make-square(100px, rgb(255, 0, 255));
+}

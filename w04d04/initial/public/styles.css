@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,11 +19,19 @@ header {
 
 section {
   border: 2px solid black;
+  /* width: 400px; */
+  /* height: 300px; */
+  font-size: 75px;
 }
 
 section div {
+  /* font-size: 50px; */
   height: 150px;
-  width: 150px;
+  /* height: 50vh; */
+  /* width: 150px; */
+  width: 10%;
+  /* min-width: 100px; */
+  /* max-width: 200px; */
   margin: 20px;
   line-height: 150px;
   display: inline-block;
@@ -31,3 +43,20 @@ footer {
   background-color: burlywood;
   height: 150px;
 }
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  footer {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  footer {
+    background-color: green;
+  }
+}
+
+
+

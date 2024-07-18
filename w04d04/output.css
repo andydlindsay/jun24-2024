@@ -1,0 +1,42 @@
+p {
+  font-size: 12px;
+  text-decoration: underline;
+  color: yellowgreen;
+  border: purple 2px dotted;
+}
+
+div {
+  font-size: 12px;
+  text-decoration: underline;
+}
+div header {
+  font-size: 24px;
+  color: maroon;
+}
+div header h3 {
+  color: #33322F;
+}
+
+.heading, .another {
+  text-decoration: overline;
+  color: yellowgreen;
+}
+
+.another {
+  margin: 0 auto;
+}
+
+.square {
+  color: white;
+  font-size: 50px;
+  width: 50rem;
+  height: 25rem;
+  padding: 20px;
+}
+
+.large-square {
+  color: rgb(255, 0, 255);
+  font-size: 50px;
+  width: 200px;
+  height: 100px;
+}
