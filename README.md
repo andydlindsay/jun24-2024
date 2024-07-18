@@ -5,3 +5,4 @@
 * [W02D03 - Networking with TCP](/w02d03/)
 * [W03D02 - CRUD with Express](/w03d02/)
 * [W04D02 - Client Side JavaScript & jQuery](/w04d02/)
+* [W04D04 - Responsive Design and SASS](/w04d04/)
