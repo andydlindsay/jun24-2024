@@ -51,7 +51,7 @@
 ### Student Suggestion: Uber/Ride Hailing
 We created an ERD for a fictional Hobbit Hobby Shop:
 
-![Hobbit Hobby Shop]()
+![Hobbit Hobby Shop](https://raw.githubusercontent.com/andydlindsay/jun24-2024/main/w05d02/hobbit%20hobby%20shop.drawio.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
