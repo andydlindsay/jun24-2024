@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  background-color: salmon;
+  padding: 0 20px;
+  color: darkblue;
+
+  .complete {
+    color: white;
+  }
+}
