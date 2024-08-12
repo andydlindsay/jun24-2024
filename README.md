@@ -11,3 +11,4 @@
 * [BREAKOUT - Express Router](/breakout-express-router/)
 * [W07D02 - What is React State?](/w07d02/)
 * [W07D04 - React Developer Workflow](/w07d04/)
+* [W08D01 - React Review](/w08d01/)
