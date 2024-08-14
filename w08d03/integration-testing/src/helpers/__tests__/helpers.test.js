@@ -1,4 +1,5 @@
-import { calcStatus } from '../helpers'
+// import test from 'node:test';
+import { calcStatus, compWinFunction } from '../helpers'
 
 describe('announceResult function', () => {
   let fakeState;
@@ -33,4 +34,29 @@ describe('announceResult function', () => {
   test('returns "Waiting" if nothing is passed in', () => {
     expect(calcStatus()).toBe('Waiting');
   });
+});
+
+describe('compWinFunction function', () => {
+
+  test('returns the winning value if isCheating is true', () => {
+    const isCheating = true;
+    const playerSelection = 'Axe';
+
+    const actual = compWinFunction(isCheating, playerSelection);
+    const expected = 'Moai';
+
+    expect(actual).toBe(expected);
+  });
+
+  test('returns a valid choice if isCheating is false', () => {
+    const isCheating = false;
+    const playerSelection = 'Axe';
+
+    const actual = compWinFunction(isCheating, playerSelection);
+    const options = ['Moai', 'Axe', 'Tree'];
+
+    // expect(options.includes(actual)).toBe(true);
+    expect(options).toContain(actual);
+  });
+
 });

@@ -1,9 +1,22 @@
+// import test, { describe } from 'node:test';
 import React from 'react';
-import ReactDOM from 'react-dom'; 
 import App from '../App';
+import { render, fireEvent } from '@testing-library/react';
 
-it('renders without crashing', () => { 
-  const div = document.createElement('div'); 
-  ReactDOM.render(<App />, div); 
-  ReactDOM.unmountComponentAtNode(div); 
+describe('tests for the App component', () => {
+
+  test('can toggle the isCheating boolean by clicking on the robot head icon', () => {
+    const {getByTestId} = render(<App />);
+
+    const robotHeadIcon = getByTestId('robot-head-icon');
+
+    fireEvent.click(robotHeadIcon);
+
+    expect(robotHeadIcon).toHaveClass('cheating');
+
+    fireEvent.click(robotHeadIcon);
+
+    expect(robotHeadIcon).not.toHaveClass('cheating');
+  });
+
 });
