@@ -7,26 +7,3 @@
 
 migration => version control for the database
 model => object that represents a database table
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
