@@ -5,5 +5,5 @@
 * [x] Generate model(s)
 * [x] Seeding data
 
-migration => version control for the database
+migration => version control for the database  
 model => object that represents a database table
