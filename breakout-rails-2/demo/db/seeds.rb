@@ -7,3 +7,31 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+author_one = Author.find_or_create_by(
+  full_name: "Dr Seuss",
+  email: "dr@seuss.com"
+)
+
+author_two = Author.find_or_create_by(
+  full_name: "Robert Munsch",
+  email: "rob@munsch.ca"
+)
+
+Book.find_or_create_by(
+  title: 'Hop on Pop',
+  # author_id: author_one.id
+  author: author_one
+)
+
+Book.find_or_create_by(
+  title: 'Fox in Socks',
+  # author_id: author_one.id
+  author: author_one
+)
+
+Book.find_or_create_by(
+  title: 'Ponytail',
+  # author_id: author_one.id
+  author: author_two
+)
