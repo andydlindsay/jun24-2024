@@ -1,0 +1,21 @@
+<h1>Create a new todo!</h1>
+
+<%= link_to "Go back", [:todos] %>
+
+<%= form_with(model: @todo, local: true) do |form| %>
+  <% if @todo.errors.any? %>
+    <div>
+      <h2><%= pluralize(@todo.errors.count, "error") %> prevented us from creating a todo. Do better senator!</h2>
+      <ul>
+        <% @todo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :task %>
+  <%= form.text_field :task %>
+
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>All the todos!</h1>
+
+<%= link_to "Create a new todo!", [:new, :todo] %>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li><%= todo.task %> (<%= todo.is_complete %>)</li>
+  <% end %>
+</li>
