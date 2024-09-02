@@ -1,10 +1,14 @@
-import './App.css';
+import "./App.css";
+import CountProvider from "./components/CountProvider";
+import InBetween from "./components/InBetween";
 
 const App = () => {
   return (
-    <div className="App">
-      <h2>useContext Demo</h2>
-    </div>
+    <CountProvider>
+      <div className="App">
+        <InBetween />
+      </div>
+    </CountProvider>
   );
 };
 
