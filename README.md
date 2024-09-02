@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [W01D01 Tech Talk and Curriculum Outline](/w01d01/)
+* [W01D01 - Tech Talk and Curriculum Outline](/w01d01/)
 * [W01D02 - The Dev Workflow](/w01d02/)
 * [W02D03 - Networking with TCP](/w02d03/)
 * [W03D02 - CRUD with Express](/w03d02/)
@@ -17,3 +17,4 @@
 * [BREAKOUT - Ruby on Rails (Migrations and Models)](/breakout-rails-2/)
 * [W10D01 - Rails Review](/w10d01/)
 * [W10D03 - Intro to TypeScript](/w10d03/)
+* [BREAKOUT - useContext Hook](/breakout-rails-2/)
